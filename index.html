@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="contact.php" method="POST">
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name"
+              ><i class="fa fa-user" aria-hidden="true"></i> Your Name</label
+            >
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" name="number" required />
+            <label for="number"
+              ><i class="fa fa-phone" aria-hidden="true"></i> Your Number</label
+            >
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email"
+            ><i class="fa fa-envelope" aria-hidden="true"></i> Your Email</label
+          >
+        </div>
+        <div class="input-group">
+          <input type="text" id="subject" name="subject" required />
+          <label for="subject"
+            ><i class="fa fa-briefcase" aria-hidden="true"></i> Subject</label
+          >
+        </div>
+        <div class="input-group">
+          <textarea id="message" name="message" rows="8" required></textarea>
+          <label for="name"
+            ><i class="fa fa-comment" aria-hidden="true"></i> Your
+            Message</label
+          >
+        </div>
+        <button type="submit" name="submit">
+          SUBMIT <i class="fa fa-telegram" aria-hidden="true"></i>
+        </button>
+      </form>
+    
+    </div>
+  </body>
+</html>
